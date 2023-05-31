@@ -1,0 +1,289 @@
+====> OBJECTS
+
+
+An Object groups multiple values together
+
+ex : 
+ const product = {
+            name: 'socks',
+            price: '1090'
+        };
+
+        console.log(product)
+        console.log(product.name);
+
+     AN OBJECT IS ANOTHER TYPE OF value
+        
+        //change the value 
+        product.name= 'cotton socks' //
+
+        //add value in an object
+        product.newPropriety = true;
+        
+
+        //delete  a value in a object
+        delete product.newPropriety;    
+        
+
+        console.log(typeof(product))//checking the type of variable
+
+
+
+        syntax rules
+
+why use OBJECTS
+
+-make your code more organized
+-let you group multiples values together 
+-let you use multiple values together
+
+MORE DETAILS
+        
+DOTE NOTATION
+
+product.name
+
+
+    BRACKET NOTATION
+
+    product['name']  => lets us use properties that don't work with dot notation.
+    
+    
+    const product2 = {
+            name:'shirt',
+            ['delivery-time'] : '1 Day'
+        }
+
+    which one should i use?
+-Use dot notation by default
+-For properties that don't work with dot notation,
+use bracket notation
+
+obs: the bracket are optional ex:
+
+const product2 = {
+            'name' :'shirt',
+            'delivery-time' : '1 Day'
+        }
+
+
+
+       INSIDE AN OBJECT, I CAN SAVE ANY TYPE OF VALUE 
+-including another object, because an object is a value
+-including Functions, because a function is another type of value 
+
+    NESTED OBJECT / AN OBJECT INSIDE AN OBJECT
+
+
+used to make the value more organized.
+
+       const product2 = {
+            name:'shirt',
+            ['delivery-time'] : '1 Day',
+            rating: {
+                stars: 4.5,
+                count: 87
+            }
+        }
+
+
+     A FUNCTION INSIDE AN OBJECT
+
+         const product2 = {
+            name:'shirt',
+            ['delivery-time'] : '1 Day',
+            fun: function function1(){ 
+                console.log('Function inside an object');
+            }
+        }
+                product2.fun() /// to access the function
+
+                FUNCTION INSIDE AN OBJECT = METHOD
+            CONSOLE = OBJECT
+            LOG= FUNCTION
+
+
+===>BUILT-IN OBJECTS
+(They are provided by thee language)
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+  
+JSON -> JavaScript Object notation                      
+-a syntax                                   {  
+                                                "name" : "shirt",      
+                                                "Delivery-time": "1 Day"
+                                                "rating":{                
+                                                    "stars": 4.5,
+                                                    "count": 87
+-Similar to JavaScript object               }    
+- don't support functions
+- don't work with single quotes ''           }
+similar to js object but with less features
+We use JSON 
+- when we send data between computers
+-when we store data
+    --------------------------------------------------------
+
+JSON Built-in object 
+-helps us work with JSON
+-helps to covert Json in JavaScript object
+-helps to convert JavaScript Object to  JSON 
+
+convert: JavaScript Object => JSON
+
+
+                 JSON.stringify()
+
+
+JSON.stringify(product2)// this way your object will be ready to be saved in a storage or be sent to another computer 
+-THIS METHOD CONVERT THE OBJEC INTO A sTRING TO BE SAVED IN LOCALSTORAGE
+
+convert: JSON  => JavaScript Object
+
+JSON.parse()
+
+
+-THIS METHOD CONVERTS A STRING/JSON OBJECT  => INTO AN jAVAsCRIPT oBJECT
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+LOCAL STORAGE
+
+-Used to save values more permanently
+-Only support Strings
+
+
+
+
+                     ------------------------------------------------------                     
+
+TO SET SOME DATA TO LOCAL STORAGE 
+
+localStorage.setItem('score',JSON.stringify(score)) // ONLY ACCEPT STRINGS
+
+
+localStorage.setItem ('message', 'hello')
+console.log('message') / to access
+
+to GET SOME DATA FROM LOCALSTORAGE
+
+localStorage.getItem()
+localStorage.getItem('score') // only accepts strings that why we use ''
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+MORE INFORMATION ABOUT OBJECTS
+
+ => null
+ is one falsyValues, similar to undefined
+
+ null vs undefined
+
+ null= intentionally want something to be empty
+
+ ----------------
+
+ AUTO-BOXING
+
+ JavaScript automatically wrap the string in an object like a box
+ and let us use some methods in the strings.
+
+ 'hello'.length
+ 'hello'.toUpperCase()
+
+ autoboxing also works with other types os  values like numbers and booleand
+
+ -not work with null or undefined 
+
+
+
+ ------------------------------------
+
+
+
+ Objects are references 
+
+ to some place in the computer's memory .
+
+        const object1 = {
+            message:'hello'
+        }
+        const object2 = object1
+
+        javaScript do not make another copy, he use the same reference in the computer's memory, its cqll copy by references
+
+
+        -behaviors
+
+even if was declared as an const, we can change the values os the properties
+we can't compare objects directly, because compares the references, not the values inside
+---------------------------------------------------------------------------------------------------
+
+
+shortCuts for objects
+
+     destructuring 
+
+            const object4 ={
+                        message: 'Good JOB!',
+                        price: 799
+                    }
+
+
+    took the property ou of the object 
+
+         
+                        const message = object4.message => normally
+           
+                        const { message, price } = object4 => shortCuts // 
+      
+        also save the value inside a variable... ex message and price.
+
+        console.log(message) consulting the values.
+        console.log(price)
+ 
+
+ - easier way to take properties out of an object 
+
+
+        ShortHand Property
+
+const object5 = {
+            message      => making reference to a variable.
+        }
+            console.log(object5)
+
+
+          ---ShortHand Method 
+
+            const object5 = {
+            message,
+            method: function function1(){
+                console.log('method')
+            }
+        }
+            console.log(object5)
+            object5.method()  
+
+------------------------------------------------------------------------------------
+
+
+shortCut
+              const object5 = {
+            message,
+            method() {
+                console.log('method');
+            }
+        }
+            console.log(object5)
+            object5.method()

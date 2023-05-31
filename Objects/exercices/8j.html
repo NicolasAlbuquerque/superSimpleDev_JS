@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a></a>
+    <button onclick="playGame('heads')">Heads</button>
+    <button onclick="playGame('tails')">Tails</button>
+    <script>
+        
+        let score  = {
+            wins: 0 ,
+            losses: 0
+        }
+        
+        function coin(){
+            let random = Math.random()
+            let result = ''
+            if(random < 0.5){
+                result='tails'
+            }else{
+                result='heads'
+                
+            }
+            return  result
+        }
+    
+
+        function playGame(guess){
+
+            if(guess === coin()){      
+
+                score.wins+=1
+                console.log(` Pc move ${coin().toUpperCase()}, you picked ${guess}, You win`)
+
+            }else {
+                
+
+                score.losses+=1
+                console.log(`Pc move ${coin()}, you picked ${guess}, You lose`)
+
+            }
+
+            console.log(`Score: Wins: ${score.wins}; Losses: ${score.losses}`);
+    }
+
+
+    </script>
+</body>
+</html>

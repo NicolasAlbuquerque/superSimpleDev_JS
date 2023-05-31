@@ -1,0 +1,79 @@
+A function lets us reuse code.
+
+
+syntax rules
+
+
+rules for dunction names
+1. can't use special words 
+
+2. Can't start with a number
+
+3. Can't use special characters except: $_
+
+Best pratice = use camelCase
+to naming yout function use a verb/action
+
+      function  function1() {
+            console.log('Hello');  //function body
+            console.log(2+2);
+
+            return 'rock' it will get this value out of the function
+        }
+
+        function1(); //Calling the function
+
+
+Return statement 
+
+lets us get a value out of this function
+
+
+syntax rules for a function
+
+1. can't use special words 
+
+2. Can't start with a number
+
+3. Can't use special characters except: $_
+Return = gets a valur ut of a function
+
+
+Parameter= puts a value into a function
+
+PARAMETER
+
+        //parameters works the same way  as a variable
+Parameter= puts a value into a function
+
+syntax rules for parameters
+
+1. can't use special words 
+
+2. Can't start with a number
+
+3. Can't use special characters except: $_
+
+
+when the function has a parameter we use to say:
+"the function takes a parameter"
+
+if the parameters are numbers:
+'The function takes a number'
+
+calculate(2)  is called 'Passing a value into the function'
+
+
+
+a function can have more than one parameter
+calculate(2,2)  is called 'Passing a value into the function'
+this value is called argument
+
+arguments can be separeted using ','
+
+
+default value
+calculate(2,2 =0.1) this is how define a default value 
+
+
+

@@ -1,0 +1,68 @@
+MATH
+
+OPERATORS
+- MINUS
+ 
+ 2 - 2 = 0
+
+
++ PLUS
+
+  2 + 2 = 4
+ 
+* STAR -- MULTIPLY
+
+2 * 5 = 10  <-- called times too ex:  two times five.
+
+/ FORWARD SLASH -- DIVIDE
+
+10 / 2 = 5
+
+ORDER OF OPERATIONS
+
+* / ARE DONE FIRS (have the same priority)
++ - ARE DONE AFTER (have the same priority)
+
+THE ORDER OF OPERATION ARE ALSO CALLED:
+Operator precedence
+
+('Brackets') - have the higher priority of OPERATIONS
+
+MORE DETAILS ABOUTH MATH IN JavaScript
+
+in programin: 
+2, 3, 4 =  INTEGERS "hole numbers"
+
+2.2 , 2.5 = FLOATING POINT NUMBERS (FLOATS)
+floating
+
+
+
+ 
+
+- weird behavior of math in JavaScript
+
+(
+    CALCULATIONS WITH FLOATS ARE SOMETIMES INACCURATE
+
+
+    2.95+7.99 = 28.93999999
+    
+    
+    how do we avoid this problem with float numbers ???
+    
+   
+BEST PRATICE WHEN CALCULARING MONEY 
+
+= CALCULATE IN CENTS INSTEAD OF DOLLARS
+AND CONVERT BACK TO DOLLARS 
+2095 + 799 = 2894 / 100 = 28.94)
+
+HOW TO ROUND A NUMBERS
+
+rounding means taking a
+number and moving it to the nearest integer  
+
+Math.round(2.2) the result will be 2
+Math.round(2.8)
+the result will be 3

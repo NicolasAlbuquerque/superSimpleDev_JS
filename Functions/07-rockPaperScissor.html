@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <p>Rock Paper Scissor</p>
+
+    <button onclick="
+    playGame('Rock')
+    ">ROCK</button>
+
+    <button onclick="
+    playGame('Paper')
+    ">PAPER</button>
+
+    <button onclick="
+        playGame('Scissor')
+    ">SCISSORS</button>
+
+
+    <script>
+
+        function playGame(playerMove){
+            const pcMove =pickComputerMove();
+            let result = ''
+
+            if (playerMove=== 'Scissor'){
+
+                if(pcMove ==='Scissors'){
+                result ='You Tie'
+                }else if (pcMove === 'Paper'){
+                    result='You Win'
+                }else if(pcMove === 'Rock'){
+                    result='You Lose'
+                }
+            console.log(pcMove)
+    alert(`You Picked ${playerMove}; Computer move ${pcMove}; you ${result}`);
+            }else if(playerMove === 'Paper'){
+                const pcMove =pickComputerMove();
+                let result = ''
+
+                    if(pcMove ==='Paper'){
+                        result ='Tie'
+                    }else if (pcMove === 'Scissors'){
+                        result='You lose'
+                    }else if(pcMove === 'Rock'){
+                        result='You win'
+                    }
+                    console.log(pcMove)
+            alert(`You Picked Paper; Computer move ${pcMove}; you ${result}`);
+            }else if(playerMove === 'Rock'){
+                const pcMove =pickComputerMove();
+                let result = '';
+
+
+                    if(pcMove ==='Rock'){
+                        result ='Tie'
+                    }else if (pcMove === 'Paper'){
+                        result='lose'
+                    }else {
+                        result='win'
+                    }
+                    console.log(pcMove)
+            alert(`You Picked Rock, Computer picked ${pcMove} You ${result}`);
+                        }
+            
+
+        }
+
+        function pickComputerMove() {
+            const randomNumber= Math.random(); // Random always generates a number grather than igual to 0 and less than 1 >= 0 < 1
+            let pcMove='';
+
+            if (randomNumber >=0 && randomNumber<1/3){
+                pcMove='Rock';
+
+            }else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+                pcMove='Paper';
+
+            }else if (randomNumber >= 2 / 3 && randomNumber <1){
+                pcMove='Scissors';
+                
+            }  
+        return pcMove;
+    }
+
+
+    </script>
+</body>
+</html>

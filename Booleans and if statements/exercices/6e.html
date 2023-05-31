@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- 
+        && has a higher priority than || so for
+    this to work correctly, we need to add
+    brackets () around the || check to make
+    sure that it gets done first.
+    -->
+
+
+    <script>
+        let age =  65
+        let isHoliday = false
+
+        if((age <=6 || age >=65) && !isHoliday){
+            console.log('Discount');
+        }else{
+            console.log('No Discount');
+        }
+    </script>
+</body>
+</html>

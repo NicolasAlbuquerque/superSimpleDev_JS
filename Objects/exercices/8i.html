@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a></a>
+    <button onclick="playGame('heads')">Heads</button>
+    <button onclick="playGame('tails')">Tails</button>
+    <script>
+        
+        
+        
+        let random = Math.random()
+        const result = random < 0.5? "heads" : 'tails'
+            console.log(random);
+            console.log(result);
+
+        function playGame(guess){
+            
+            if(guess === result){        
+                console.log(guess, 'You win')
+
+            }else {
+                console.log(guess, 'You Lose')
+                
+            }
+
+    }
+
+
+    </script>
+</body>
+</html>

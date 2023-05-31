@@ -1,0 +1,1 @@
+alert(`Total coast: $${2+5}`)

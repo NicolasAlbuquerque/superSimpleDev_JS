@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+//         const product = {
+//             name: 'socks',
+//             price: '1090'
+//         };
+
+//         console.log(product);
+//         console.log(product.name);
+//         console.log(product.price);
+
+//         product.name= 'cotton socks' //change the value 
+//         console.log(product);
+
+//         //add value in an object
+
+//         product.newPropriety = true;
+//         console.log(product);
+
+//         //delete  a value in a object
+//         delete product.newPropriety;    
+//         console.log(product);
+
+//         console.log(typeof(product))//checking the type of variable
+
+//         const product2 = {
+//             name:'shirt',
+//             ['delivery-time'] : '1 Day',
+//             rating: {//an object inside an object 
+//                 stars: 4.5,
+//                 count: 87
+//             },
+//             fun: function function1(){//a function inside an object 
+//                 console.log('Function inside an object');
+//             }
+//         }
+        
+//         console.log(product2['name']);//bracket notation
+//         console.log(product2);
+//         console.log(product2.rating.count);
+//         product2.fun()
+
+//         console.log(typeof Math.random);
+
+
+//         console.log(`Convert JavaScript Object to JSON
+// ${JSON.stringify(product2)}`)
+//         const jsonString = JSON.stringify(product2)
+//         console.log('Convertendo JSON para JavaScript Object');
+//         console.log(JSON.parse(jsonString))
+        
+
+
+
+
+        console.log('Hello'.length)
+        console.log('hello'.toUpperCase());
+
+
+        const object1 = {
+            message:'hello'
+        }
+        const object = object1
+
+        object1.message = 'Good JOB!!!'
+
+        console.log(object1);
+        console.log(object)
+
+        const object3 ={
+            message: 'Good JOB!'
+        }
+
+        console.log(object3 === object1);
+        console.log(object === object1);
+        
+        
+        const object4 ={
+            message: 'Good JOB!',
+            price: 799
+        }
+
+
+        ///destructuring 
+
+        //took the property ou of the object 
+
+        //const message = object4.message
+        const { message,price } = object4 
+
+        console.log(message);
+        
+        console.log(price)
+
+        const object5 = {
+            message,
+            method() {
+                console.log('method');
+            }
+        }
+            console.log(object5)
+            object5.method()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Logical Operators  
+
+let us combine boolean values
+
+&& ||
+
+AND OPERATOR &&
+checks if two booleans values are borh true
+
+OR OPERATOR |||
+checks if at least one side is true
+
+NOT OPERATOR 
+!true or !false
+will flip the result or say if this ststement be falso do it 
+
+
+
+ORDER OF OPERATIONS 
+
+1.(...)
+2.*/
+3.+-
+4.Comparison operators
+5.Logical operators

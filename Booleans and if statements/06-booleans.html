@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        true
+        false
+
+        console.log(typeof true); 
+        console.log(5=='5.00');
+        console.log(3> 5-5)
+
+        if(false){
+            console.log('Hello');
+        }else{
+            console.log('else');
+        }
+
+        const age =16;
+
+        if(age >= 16){
+            console.log('You can drive.');
+        }else if (age>= 14){
+            console.log('Almost there.');
+        }else{
+            console.log("You can not drive");
+        }
+
+
+
+        if (5){
+    console.log('Truthy')
+}
+
+//TERNARY
+const result = 10 ? 'truthy' : 'falsy'
+console.log(result)
+
+//Guard
+false && console.log('hello')
+const message = 5 && 'Hello'
+    console.log(message);
+
+    //Default
+
+    const currency = undefined || 'USD';
+
+
+    </script>
+</body>
+</html>

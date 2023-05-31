@@ -1,0 +1,50 @@
+1. html= creates the content
+2. css= change the appearance 
+3. JavaScript make it interactive 
+
+
+HTML E CSS REVIEW
+
+HTML
+hyper text markup language
+
+
+to create a element 
+< less than
+> greater than
+
+HTML tag 
+opening <button> 
+helllo  //content
+closing tag </button>
+
+
+----------------------------------------
+multiple spaces are combined into 1 space
+
+new lines are the seme, transformed into 1 space
+------------------------------------
+
+web page = a single page(on a Website)
+
+(home page, cart page, etc.) < - website
+--------------------------------------
+
+
+CSS
+
+cascading style sheets
+
+-change the appearance
+
+Css selector
+-selects which elements to change
+
+cSS style
+how to change a the appearance for each css style we have a css property and a css value
+
+color: red;
+
+-------------------------------------------
+html attributes change the behavior of an element
+--------------------------------------

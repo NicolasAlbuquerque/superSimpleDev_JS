@@ -1,0 +1,67 @@
+//variable name rrstrictions:
+
+1. Can't use especial words
+2. Can't start with a number
+3. Can't use special characters except: $_
+
+
+
+//Assign a value to a variable
+ let variable1 = 3;
+
+// change the value 
+        variable1=7; // Re-Assing a value to a variable
+
+
+//Variable Re-Assignment Shortcuts
+
++= 2 variable = variable +2
+-= 2 variable = variable -2
+/= 2 variable = variable /2
+*= 2 variable = variable *2
+++  variable = variable  +1
+--  variable = variable  +2
+
+
+
+//Best pratice for naming variables
+Naming convention CamelCase
+we use camelCase to joinWords with no spaces between then.
+Capitalize every words except the first word
+
+CamelCase is the standard for JavaScript
+
+
+PascalCase
+-same as CamelCase
+-except we Capitalize first word
+
+kebab-case 
+
+-cart-quantity
+file names.
+-use in html and css
+
+snake_case
+use underline to separete words
+-cart_quantity
+use in other languages, not in JavaScript
+
+
+--------------------------
+
+ ways to create a variable in JavaScript
+
+ let - can change it value 
+ const - can't change its value later
+ var - can change it value 
+
+ don't use var in new javascript codes
+
+
+
+ BEST PRATICE= use const by default
+ (only use let when  need to change the variable)
+
+
+ typeof+variables

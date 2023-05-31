@@ -1,0 +1,60 @@
+BOOLEANS
+
+
+Booleans are another type of value
+
+-there are only  boolean value:
+
+true or false
+
+whats the purpose of boolean values?
+A Boolean value represents whether something is true or false
+
+
+syntax rules for booleans
+
+-without quotes
+-
+
+
+COMPARISON OPERATOR
+
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+=== equal to
+!== not equal to 
+
+
+theres two ways in JS to check if twp values are equals
+== or ===
+
+the diference is :
+
+==
+DOUBLE EQUALS
+-try to convert both values into the same type, for exemple
+console.log(5=='5.00'); the result wil be true because double equals make a conversion 
+
+
+===
+Triple EQUALS
+to evoid the value conversion 
+
+
+
+the same for the not equal to
+
+always use !== with two equals to avoid the conversion behavior
+
+
+
+ORDER of operations
+1.(...)
+2.*/
+3.+-
+4.Comparison operators
+
+
+comparison operators have lower priority than math operators

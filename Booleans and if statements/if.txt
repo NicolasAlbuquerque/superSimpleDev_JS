@@ -1,0 +1,101 @@
+IF STATEMENTS 
+
+- lets us to write multiple groups of code
+- and then decide which code to run
+
+syntax rules  to create an if statement
+
+if(Boolean value/CONDITION ){
+    CODE WHO WILL BE RUN // BRANCHES
+}else{
+        CODE WHO WILL BE RUN // BRANCHES
+}
+
+
+is the condition is true, the fir block will be run
+in case not, the else will be run
+
+as also in Java curly brackets are optional when th if statements had jus only line of code
+
+
+we can have more tha one condition
+if(Boolean value/CONDITION ){
+    CODE WHO WILL BE RUN // BRANCHES
+}else if (boolean value){
+        CODE WHO WILL BE RUN // BRANCHES
+}else{
+            CODE WHO WILL BE RUN // BRANCHES
+
+}
+
+
+SCOPE
+
+- A scope limits where a variable exists
+-scopes help us to avoid naming conflicts
+
+Any variable created inside {...}
+will only exist inside the {...}
+
+if we create a variable with var, its will not respect thr scope, thats why we use let and const
+
+
+Truthy and falsy values
+
+if (5){
+    console.log('Truthy')
+}
+
+FALSY VALUES 
+-false
+-0
+-''
+-NaN
+- undefined
+- null
+any value that is not here is a truethy
+
+Shortcuts for If-statements
+-Ternary Operator ?:
+-Guard Operator &&
+- Default Operator ||
+
+//TERNARY
+true ? 'truthy' : flasy
+
+it a short cut of 
+
+if(true){
+    'thrutty'
+}else{
+    'falsy
+}
+
+const result = 10 ? 'truthy' : 'falsy'
+
+let result;
+if(condition){
+    result='truthy'
+}else{
+    result='falsy'
+}
+
+
+GUARD OPERATOR
+False && console.log('hello')
+
+if (condition){
+    console.log('hello')
+}
+const message = 5 && 'Hello'
+    console.log(message);
+
+DEFAULT OPERATOR
+
+const currency = undefined || 'USD';
+
+let currency;
+
+if(!condition){
+    currency='usd'
+}

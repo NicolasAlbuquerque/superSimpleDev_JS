@@ -1,0 +1,67 @@
+syntax rules for string
+
+single quotes around the text
+--------------------------------------------------------------------
+CONCATENATION 
+(combine strings together)
+
+'some' + 'text'
+
+'some' + 'more' + 'text'
+--------------------------------------------------------------------
+
+
+'hello' + 2 
+ ^
+ |
+
+i will get the response 'hello2'
+
+this feature is called
+type coercion (automatic type conversion )
+
+-----------------------------------
+THE COMAND TYPEOF
+
+typeof 2 will tell us that 2 is a number
+------------------------------------
+
+MORE DETAILS ABOUT strings
+
+jn javascript we have three ways to create a string 
+
+what should we use to create a string?
+
+1. Use '...' single quote by default
+
+2. if we need interpolation, multii-line strings use `...`(template strings)(back tick)
+
+
+3. Using double quotes
+"..." is the same than single 
+
+theres one situation that we have to use, it is when we have a single quote inside the string ex:
+
+**  "I'm learning JavaScript" ** 
+there is another way:
+
+ESCAPE CHARACTER \'  (backslash)
+
+'I\'m learning javaScript'
+
+\n new line CHARACTER
+
+alert('some\ntext')
+-----------------------------------
+INTERPOLATION
+
+`...` it is called tamplete strings, there ae his special features
+
+interpolation let us insert a value directly into a string
+
+
+MULTILINE string
+
+`some
+TEXT`
+

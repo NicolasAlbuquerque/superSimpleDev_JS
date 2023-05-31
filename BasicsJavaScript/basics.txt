@@ -1,0 +1,8 @@
+Java Scrispt is Case-Sensitive
+
+Syntax 
+-rules that we have to follow when using an programming language
+
+-similar to English (grammar)
+
+- in programming, we have to follow the rules of syntax exactly.
