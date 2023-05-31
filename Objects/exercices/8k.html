@@ -25,24 +25,28 @@
                 result='tails'
             }else{
                 result='heads'
-                
             }
-            return  result
+            return result
         }
-    
+
 
         function playGame(guess){
 
-            if(guess === coin()){      
+            const pcMove= coin();
 
+
+            if(guess === pcMove){      
+                console.log('aqui ',guess, pcMove);
                 score.wins+=1
-                console.log(` Pc move ${coin()}, you picked ${guess}, You win`)
+                console.log(` Pc move ${pcMove}, you picked ${guess}, You win
+`)
 
             }else {
                 
-
+                console.log('aqui', guess, pcMove);
                 score.losses+=1
-                console.log(`Pc move ${coin()}, you picked ${guess}, You lose`)
+                console.log(`Pc move ${pcMove}, you picked ${guess}, You lose
+`)
 
             }
 
