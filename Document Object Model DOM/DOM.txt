@@ -1,0 +1,46 @@
+ => DOM  Object Model DOM
+
+-is a build  in Object from Java script
+
+-when we change something with this build-in object, the url changes
+
+-Dom Combine Js and HTML together.
+
+
+Whenever we get a value from thee dom, the value will be a sting
+--------------------------------------------------------------------------
+syntax 
+
+-Use dot notation.
+lowerCase
+
+------------------------------------------------------------------------------
+document.title='change'//linked to the title
+
+document.body.innerHTML= 'Hello'// linked to the body
+
+ console.log(document.body); / show on console, all the object html
+
+
+ document.body.innerHTML='<button>Good Job</button>'
+---------------------------------------------------------------------------------
+ QUERY SELECTOR
+
+
+document.querySelector()
+=> for classes
+document.querySelector('.className')
+
+=> for ID
+document.querySelector('#idName)
+
+
+
+
+
+-let us get any element from the page and put it inside JavaScript,
+it gives JS full control of the webpage
+
+
+
+Every Element has a Property .innerHTML

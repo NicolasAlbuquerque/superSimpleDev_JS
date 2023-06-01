@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    
+    <button onclick="clicked()" class="" >click here</button>
+    <button onclick="clicked()" class="js-second" >Second Button</button>
+    <script>
+
+
+
+    console.log(document.querySelector('button').innerHTML);
+
+    document.querySelector('button')
+        .innerHTML='changed'
+
+    
+    const buttonElement = document.querySelector('.js-second')
+        .innerHTML='thisssss'  
+        console.log(buttonElement);  
+
+/* 
+
+        //document.title='change'//linked to the title
+        //document.body.innerHTML= 'Hello'// linked to the body
+        console.log(document.body);
+             console.log(document.title)
+        console.log(typeof document.body);
+
+ 
+            function clicked(){
+                document.body.innerHTML='<button>Good Job</button>'
+
+                
+            }
+*/
+                String(25) // convert a number into a string 
+
+                console.log('25' - 5)
+
+
+    </script>
+</body>
+</html> 
