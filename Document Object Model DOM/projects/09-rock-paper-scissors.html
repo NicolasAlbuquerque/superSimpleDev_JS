@@ -107,12 +107,12 @@
         
             function updateScoreElement(){
                 document.querySelector('.js-score')
-            .innerHTML= `wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
+                    .innerHTML= `wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`
             }
 
 
         function pickComputerMove() {
-            const randomNumber = Math.random(); // Random always generates a number grather than igual to 0 and less than 1 >= 0 < 1
+            const randomNumber = Math.random(); // Random always generates a number grater than igual to 0 and less than 1 >= 0 < 1
             let pcMove = '';
 
             if (randomNumber >= 0 &&    randomNumber < 1 / 3) {

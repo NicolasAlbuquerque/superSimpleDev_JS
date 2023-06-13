@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+
+
+    <button onclick="
+        console.log(`Cart quantity: ${cartQuantity}`)
+        displayCartQ()
+        ">Show Quantity
+    </button>
+
+
+    <button onclick="
+    updateCartQuantity(1)
+    ">Add to Cart</button>
+
+    
+    <button onclick="
+    updateCartQuantity(2)
+    ">+2</button>
+
+
+    <button onclick="
+    updateCartQuantity(3)
+    ">+3</button>
+
+
+    <button onclick="
+    updateCartQuantity(4)
+    ">+4 </button>
+
+
+    <button onclick="
+    updateCartQuantity(5)
+    ">+5 </button>
+
+
+    <button onclick="
+    updateCartQuantity(-1)
+    ">Remove from cart</button>
+
+
+    <button onclick="
+    updateCartQuantity(-2)
+    ">-2</button>
+
+
+    <button onclick="
+    updateCartQuantity(-3)
+        ">-3</button>
+
+    <button onclick="
+   
+    cartQuantity=0;
+    qq.innerHTML= `Cart was Reset;`
+    displayCartQ(0)
+
+    ">Reset Cart</button>
+
+    <p class="cartQ"></p>
+
+    <script>
+        let cartQuantity=0;
+        
+        const qq = document.querySelector('.cartQ')
+        function updateCartQuantity(value){
+            if (cartQuantity + value > 10){
+                qq.innerHTML= `The cart is Full`
+                return;
+            }
+            if (cartQuantity + value < 0){
+                qq.innerHTML = `Not Enough items in the Cart`
+                console.log('Not enough items in the cart');
+                return;
+            }
+            cartQuantity+=value
+            
+            displayCartQ();
+            console.log(`Cart quantity ${cartQuantity}`); 
+        }
+
+        function displayCartQ(zero){
+            if(zero === 0 ){
+                cartQuantity = 0;
+                qq.innerHTML =`Cart quantity ${cartQuantity}`
+
+            }else{
+                qq.innerHTML =`Cart quantity ${cartQuantity}`
+            }
+            
+        }
+    </script>
+</body>
+</html>

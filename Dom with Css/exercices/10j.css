@@ -1,0 +1,25 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-size:30px;
+    text-align: center; 
+}
+.numbers{
+    color: white;
+    background-color: rgb(75, 74, 74);
+    border: none;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+}
+.operator{
+    color: white;
+    background-color: rgb(250, 160, 10);
+    border: none;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+}

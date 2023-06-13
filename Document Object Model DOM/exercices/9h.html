@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"
+    class="name"
+    onkeyup="onKeyUp(event)"
+    >
+
+    <p class="js-KeyUp"></p>
+
+    <script>
+        function onKeyUp(event){
+
+            let keys = document.querySelector('.name')
+            document.querySelector('.js-KeyUp')
+                .innerText= keys.value
+        }
+    </script>
+
+</body>
+</html>
