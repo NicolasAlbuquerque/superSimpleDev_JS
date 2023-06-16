@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arrayN = [
+            1,
+            20,
+            22,
+            24,
+            3
+        ]
+
+        const arrayS = [
+            'Hello',
+            'Good',
+            'hi'
+        ]
+
+
+        function arraySwap(array){
+
+            //taking the size of array
+            const lastIndex = array.length-1
+
+            //saving the numbers before the change.
+            const lastValue= array[lastIndex]
+            const firstValue=array[0]
+
+//Changing the numbers
+
+            array[lastIndex] = firstValue
+            array[0] = lastValue
+
+            return array
+        }
+            console.log(arraySwap(arrayS));
+            console.log(arraySwap(arrayN));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array1= [1,-3,5]
+        const array2= [-2,3,-5,7,10]
+        
+
+        function minMax(nums){
+            let minMax= {
+                        min: 0,
+                        max: 0
+                    }
+            for(let i = 0 ; i < nums.length; i++){
+                let num=nums[i]
+
+                if (num < minMax.min){
+                    minMax.min= num
+                }else if(num > minMax.max){
+                    minMax.max=num
+                }
+            }
+            return minMax
+        }
+        console.log(minMax(array1));
+        console.log(minMax(array2));
+    </script>
+</body>
+</html>
