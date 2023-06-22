@@ -66,3 +66,6 @@ number and moving it to the nearest integer
 Math.round(2.2) the result will be 2
 Math.round(2.8)
 the result will be 3
+
+
+% < == REMAINDER RESTO DA DIVISÃO

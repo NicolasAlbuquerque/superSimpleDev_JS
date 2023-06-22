@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arrayString = ['hello', 'world','search', 'good']
+        const arrayString2= ['not','found']
+
+
+        function contains(string){
+            let index = -1
+            for(let i = 0; i < string.length; i++){
+                if(string[i] === 'search'){
+                    index=i
+                
+                }
+            }
+            return console.log(index);
+        }
+
+        contains(arrayString2)
+        contains(arrayString)
+    </script>
+</body>
+</html>
