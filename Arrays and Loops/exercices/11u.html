@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array0= ['egg','apple', 'egg','egg', 'ham']
+        
+        let copyReverse = array0.slice().reverse()
+
+        function removeEgg(array){
+            let result = []
+            let eggRemoved =0
+            for(let i = 0; i < array.length;i++){
+                if(array[i]=== 'egg'&& eggRemoved < 2){
+                    
+                    eggRemoved++;
+                    continue;
+                }
+                result.push(array[i])
+            } 
+
+            return result.reverse();
+        }
+        
+        console.log(array0);
+        console.log('-----------------------------------');
+        console.log(copyReverse);
+        console.log(removeEgg(copyReverse));
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,121 @@
+function is a value 
+we can save a function inside a variable
+
+
+const function1 = function greeting(){
+            console.log('hi');
+        }
+Calling the function inside a variable:
+function1();
+we can access the function  by the name of a variable
+
+
+
+
+it's called anonymous function
+-a function without a name
+
+const function1 = function(){
+            console.log('hi');
+        }
+
+in anonymous functions the name is not needed   
+
+
+METHOD 
+(FUNCTION INSIDE AN OBJECT)
+
+ const object1 = {
+            num:2,
+            fun: function(){
+                console.log('hi');
+            }
+        }
+
+        object1.fun()
+
+----------------------------------------------------------------------------------------------------------------------------
+PASSING A VALUE INTO A FUNCTION
+
+
+function display(param){
+            console.log(param)
+
+        }
+
+        display(2);
+
+        we can also pass a function into a function
+
+
+        function fun(param){
+            param()
+        }
+
+        run(function(){console.log('hello ')}) // passing a function into another function 
+
+        the function we are pass in is called callback
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+setTimeout()
+
+-allow us to run a function in the future
+
+1- a function that we want to run in the future
+2- how long to wait before running this function (a number in milliseconds)
+1000 milliseconds = 1 second
+
+ setTimeout(function(){
+            console.log('timeout');
+        }, 3000);
+
+ ---------------------------------------------------------------------------------------------------------------------------------------
+
+ Asynchronous code 
+ -WON'T WAIT for a line to finish before going to the next 
+
+ Synchronous code
+ -WILL WAIT for one line to finish before going to the next line      
+
+ ----------------------------------------------------------------------------------------------------------------------
+
+ setInterval()
+
+ take two parameters 
+1- a function that we want to run in the future
+2- how long to wait before running this function (a number in milliseconds)
+1000 milliseconds = 1 second
+
+It will KEEP running a function in the future// repeating the code 
+
+each interval create a new ID
+
+to clean this id we have to use the method clearInterval() setting a variable where we save this ID as parameter.
+
+clearInterval(intervalId);
+
+
+//-------------------------------------------------------------------------------------------------------
+
+
+ANOTHER WAY TO LOOP AN ARRAY
+
+.forEach()
+
+-is the preferred way to loop through an array
+
+[
+        'make dinner',
+        'wash dishes',
+        'Watch Simon on youtube.'
+      ].forEach(function(value){
+        console.log(value);
+      })
+
+let array1 = ['nick', 'carlos','ricardo ']
+
+      array1.forEach(function(value){
+  console.log(value);
+
+})
