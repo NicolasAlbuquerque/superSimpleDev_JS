@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+</head>
+<body>
+    <button
+    class ='js-add-button'
+    onclick="add()"
+    >add</button>
+    
+    <button
+    class="js-remove-button"
+    onclick="remove()"
+    >remove</button>
+
+
+
+    <script>
+
+        let num = 0
+        function add(){
+            if(document.title === 'app'){
+            setInterval(function(){
+                num ++
+                document.title=`(${num}) New Message`
+            },2000)
+        }else {
+            document.title ='app'
+        }
+        }
+    </script>
+</body>
+</html>

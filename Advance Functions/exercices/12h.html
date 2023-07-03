@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+</head>
+<body>
+    <button
+
+    onclick="num++"
+    >add</button>
+    
+    <button
+
+    onclick="num--"
+    >remove</button>
+
+
+
+    <script>
+
+        let num = 2
+
+        setInterval(function(){
+            if(document.title === 'app'){
+                document.title =`(${num}) New Messages`
+            }else{
+                document.title ='app'
+            }
+        },1000)
+            
+    </script>
+</body>
+</html>
