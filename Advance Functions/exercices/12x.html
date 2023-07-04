@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="style-rock-paper-scissors.css">
+    <link rel="stylesheet" href="12r.css">
 </head>
 <body>
 
@@ -36,26 +36,20 @@
     <p class="js-score score" ></p>
 
 <button 
-    class="reset-score-button"
-onclick="
-    score.losses=0;
-    score.wins=0;
-    score.ties=0
-    localStorage.removeItem('score')
-    updateScoreElement();
-    ">Reset score</button>
+    class="reset-score-button js-reset-button"
+>Reset score</button>
 
     <button
-    class="auto-play-button"
-    onclick="autoPlay()"
+    class="auto-play-button js-auto-play-button"
     >Auto play</button>
 
     <button
-    class="stop-button"
-    onclick="stop()"
+    class="stop-button js-stop-button"
     >Stop AutoPlay</button>
 
-    <script src="rock-paper-scissors.js"></script>
+    <p class='areUsure'></p>
+
+    <script src="12r.js"></script>
 </body>
 
 </html>

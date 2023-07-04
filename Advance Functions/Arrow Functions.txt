@@ -1,0 +1,154 @@
+Arrow Functions =>
+
+
+Arrow functions works equals the regular functions
+
+ const regularFunction= function (){
+            console.log('hello');
+            return 6;
+        }
+
+        const arrowFunction = () => {
+            console.log('hello');
+            return 6;
+        };
+        arrowfunction()
+
+-Parameters works at the same way  
+
+
+
+DIFFERENCES 
+
+-Arrow functions have shortcuts
+
+const oneParam = (param) => {
+            console.log(param + 1);    // when they have just one parameter the brackets are optional 
+        }
+        oneParam(1)
+
+        const oneParam = param => {
+            console.log(param + 1);
+        }
+        oneParam(1)
+
+
+-ONE LINE shortcut
+
+const oneLine = () => {return 2 + 3;}   
+const oneLine = () =>  2 + 3; 
+
+when the function have just one line we use in the same line 
+here the curly brackets are optional and return too
+
+-----------------------------------------------------------------------
+
+passing a function into another function, => use arrow functions
+
+
+
+
+USING ARROW FUNCTIONS WITH OBJECTS
+    const object2 = {
+        method: () => {
+
+        },
+        method(){
+                        
+        }
+    }
+
+
+-the second value is the right way to do . its a shortcut
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+======================> EVENT LISTENER 
+
+.addEventListener()
+- Let us run some code when we interact whit the element
+"does the same thing that oneclick
+
+
+have two Parameters
+
+1. event - what tipe of interaction
+2. the function that we want  to run
+
+  buttonElement.addEventListener('click' ,()=>{   
+            console.log('click');
+
+        })
+
+
+
+        -we can use multiples addEventListener in the same element
+
+        -we can remove event LISTENER
+        .removeEventListener()
+
+
+
+BEST PRACTICE: 
+        Use .addEventListener()
+        instead of onclick=''
+
+                             ---------------------------------------                             
+
+.addEventListener() whit 'keydown'    
+
+document.body.addEventListener('keydown', (event)=>{
+                console.log(event.key);
+            })
+
+
+            ------------------------------------------------------------------------------------------
+
+
+more features that use functions as a value 
+
+
+
+.filter
+
+1.Creates a new array []
+2. return true, => put value in array
+3. return false, => not put value in array
+
+
+    [1,-3,5].filter((value, index)=> {
+            // if(value >=0){
+            //     return true;
+            // }else{
+            //     return false
+            // }
+            return value >= 0
+        })
+
+
+
+            -----------------------------------------
+.map()
+
+1.creates a new array []
+2. whatever we return = > added to new array
+
+console.log([1,1,3].map((value, index)=>{
+    return value *2
+}));
+
+
+----------------------------------------------------------------------------------------------------------
+SHORTCUTS OF ARROW FUNCTIONS
+
+console.log([1,1,3].map(value => value *2));
+
+-------------------------------------------------------------------------------------
+
+
+Closure
+
+-if a Function has access to a value
+-it will always have access to that value
+-value gets packaged together (enclosed) whit the function

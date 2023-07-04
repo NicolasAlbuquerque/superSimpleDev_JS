@@ -18,11 +18,22 @@ updateScoreElement();
 let isPlaying =false
 let intervalId
 
+// const autoPlay = () => {
+
+// }
+const stop = ()=> {
+    clearInterval(intervalId)
+}
+
+
+
+
+
 function autoPlay(){
 
     if(!isPlaying){
 
-        intervalId = setInterval(function(){ 
+        intervalId = setInterval(() => { 
             const playerMove = pickComputerMove()
             playGame(playerMove)
 }, 1000)
@@ -33,9 +44,34 @@ function autoPlay(){
 
 
     }
-
-
     
+
+    document.querySelector('.js-rock-button')
+        .addEventListener('click', ()=> {
+            playGame('Rock')
+    });
+
+    document.querySelector('.js-paper-button')
+        .addEventListener('click', ()=>{
+            playGame('Paper')
+        });
+
+        document.querySelector('.js-scissors-button')
+            .addEventListener('click',() => {
+                playGame('Scissors')
+            })
+
+        document.body.addEventListener('keydown', (event)=>{
+                console.log(event.key);
+                if(event.key === 'r'){
+                    playGame('Rock')
+                }
+                else if(event.key === 'p'){
+                    playGame('Paper')
+                }else if(event.key === 's'){
+                    playGame('Scissors')
+                }
+            })
 
 function playGame(playerMove) {
 const pcMove = pickComputerMove();
